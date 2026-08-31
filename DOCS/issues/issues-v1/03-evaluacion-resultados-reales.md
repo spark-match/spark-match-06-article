@@ -1,7 +1,7 @@
 # Issue 03 — Evaluación con resultados reales
 
 **Estado (2026-08-05): 🟡 Marco corregido y fortalecido; resultados medidos siguen pendientes.**
-Al revisar el código real de `spark-match-08-deep-agent/evals/`, se encontró
+Al revisar el código real de `spark-match-07-deep-agent/evals/`, se encontró
 que el informe tenía un **error factual, no solo una carencia**: decía que el
 LLM-as-judge "se implementa del lado de AWS y queda pendiente hasta que el
 agente esté desplegado". Eso es falso — `evals/runner.py --mode mock` ya

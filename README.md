@@ -25,9 +25,8 @@ The platform the paper describes lives in the other repositories listed below. A
 | Backend | [`spark-match-03-backend`](https://github.com/spark-match/spark-match-03-backend) | Serverless TypeScript (Lambda + EventBridge + SAM) |
 | Frontend | [`spark-match-04-frontend`](https://github.com/spark-match/spark-match-04-frontend) | Angular conversational SPA |
 | Data pipeline | [`spark-match-05-data-pipeline`](https://github.com/spark-match/spark-match-05-data-pipeline) | ETL, Selenium scraping, RIASEC labelling |
-| Model training | [`spark-match-06-model-training`](https://github.com/spark-match/spark-match-06-model-training) | Experiments and tracking with Weights & Biases |
-| Paper | [`spark-match-07-article`](https://github.com/spark-match/spark-match-07-article) | This repository -- LaTeX with CI/CD |
-| Conversational agent | [`spark-match-08-deep-agent`](https://github.com/spark-match/spark-match-08-deep-agent) | Deep Agent (`deepagents` harness) + langmem + evals |
+| Paper | [`spark-match-06-article`](https://github.com/spark-match/spark-match-06-article) | This repository -- LaTeX with CI/CD |
+| Conversational agent | [`spark-match-07-deep-agent`](https://github.com/spark-match/spark-match-07-deep-agent) | Deep Agent (`deepagents` harness) + langmem + evals |
 
 The stack described in the paper: AWS Bedrock (Claude) and the `deepagents` harness with langmem for the agent; Python with Pandas and NumPy for scoring; serverless TypeScript on AWS Lambda, EventBridge and SAM for the backend; Angular 21 with Angular Material for the frontend; Ponte en Carrera (MINEDU) as the data source, ingested with Selenium and Pandas into RDS PostgreSQL; LangSmith, DVC and GitHub Actions for MLOps; Terraform with checkov, tflint and AWS Budgets for infrastructure.
 
@@ -36,7 +35,7 @@ The stack described in the paper: AWS Bedrock (Claude) and the `deepagents` harn
 ## Repository layout
 
 ```
-spark-match-07-article/
+spark-match-06-article/
 |-- main.tex                          Title page, abstract, resource table, \input of every section
 |-- references.bib                    BibTeX references, apalike style (8 entries)
 |-- config/

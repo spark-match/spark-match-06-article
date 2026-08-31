@@ -22,13 +22,13 @@ El informe (Resumen, Secciones 1, 2, 4 y 8) describe un motor de recomendación
 que combina **cinco criterios ponderados** (afinidad, ingreso, costo, admisión,
 duración) sobre las **6,208 combinaciones carrera–universidad** de
 `features.csv`. Al revisar el código real (no la documentación) de
-`spark-match-08-deep-agent` y `spark-match-03-backend` en su rama `dev`
+`spark-match-07-deep-agent` y `spark-match-03-backend` en su rama `dev`
 (commits del 2026-08-05), se confirmó que **eso no es lo que existe hoy**:
 
-- `spark-match-08-deep-agent/src/tools/matching/handler.py` implementa
+- `spark-match-07-deep-agent/src/tools/matching/handler.py` implementa
   `calculate_affinity_handler`, que calcula **únicamente similitud RIASEC**
   (1 de los 5 criterios) y ordena un Top-N solo por ese criterio.
-- El catálogo que usa el agente (`spark-match-08-deep-agent/data/careers/*.md`,
+- El catálogo que usa el agente (`spark-match-07-deep-agent/data/careers/*.md`,
   19 archivos) es **hecho a mano**: `id, name, riasec_profile, field, outlook`.
   No tiene universidad, ingreso, costo, admisión ni duración.
 - `features.csv` (6,208 filas, verificado por conteo directo) existe en
@@ -56,7 +56,7 @@ Quedan dos caminos, y el equipo debe elegir uno antes del 09/08:
 1. **Cerrar la brecha de verdad**: implementar los 4 criterios faltantes y
    conectar el catálogo del agente con `features.csv` (o un subconjunto
    representativo). Esto es trabajo real en Python, principalmente en
-   `spark-match-08-deep-agent/src/tools/matching/` y posiblemente
+   `spark-match-07-deep-agent/src/tools/matching/` y posiblemente
    `spark-match-05-data-pipeline`. Requiere decidir: ¿el agente lee
    `features.csv` directamente, o el backend lo carga a Aurora y expone un
    endpoint? Alto impacto en el puntaje de la Sección 4 (Destacado exige
@@ -102,7 +102,7 @@ Quedan dos caminos, y el equipo debe elegir uno antes del 09/08:
 ## Verificación
 
 - [ ] `grep -rn "calculate_affinity_handler\|w_ingreso\|w_costo\|w_admision\|w_duracion"` en
-      `spark-match-08-deep-agent/src/` confirma qué criterios están realmente
+      `spark-match-07-deep-agent/src/` confirma qué criterios están realmente
       combinados (hoy: solo afinidad).
 - [ ] El PDF compila sin errores (`latexmk -pdf -interaction=nonstopmode
       -halt-on-error main.tex`) tras cualquier edición de las secciones

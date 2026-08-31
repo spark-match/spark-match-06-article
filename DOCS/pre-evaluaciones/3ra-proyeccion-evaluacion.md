@@ -1,7 +1,7 @@
 # Pre-evaluación 3 — Proyección de nota (Spark Match / CareerMatch Perú)
 
 **Fecha de esta evaluación:** 2026-08-08, ~21:15 (hora Perú)
-**Ramas evaluadas:** `main` en 8 de los 9 repos, **`dev` en `spark-match-08-deep-agent`** — por indicación explícita: el PR de sincronización (`#67`, `chore/sync-dev-into-main → main`) está pendiente de aprobación por el encargado, así que esta pre-evaluación asume ese merge como el estado que `main` tendrá pronto y evalúa contra `dev` directamente.
+**Ramas evaluadas:** `main` en 8 de los 9 repos, **`dev` en `spark-match-07-deep-agent`** — por indicación explícita: el PR de sincronización (`#67`, `chore/sync-dev-into-main → main`) está pendiente de aprobación por el encargado, así que esta pre-evaluación asume ese merge como el estado que `main` tendrá pronto y evalúa contra `dev` directamente.
 **Entrega final:** domingo 2026-08-09, 13:00 hrs — **quedan ~16 horas**.
 **Reemplaza a:** `2da-proyeccion-evaluacion.md` (2026-08-08, ~20:55) únicamente en lo relativo a `08-deep-agent`; el resto de hallazgos de esa versión sigue vigente y no se repite aquí salvo que haya cambiado.
 

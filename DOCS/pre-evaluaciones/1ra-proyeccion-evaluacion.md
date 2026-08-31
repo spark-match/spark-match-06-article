@@ -47,7 +47,7 @@ Ordenadas por impacto en la nota.
 
 **Qué dice el diseño del informe:** un ranking multicriterio (afinidad, ingreso, costo, admisión, duración) sobre las 6,208 combinaciones carrera–universidad de `features.csv`, con pesos dinámicos inferidos por el LLM.
 
-**Qué existe hoy en el código** (`spark-match-08-deep-agent/src/tools/matching/handler.py`):
+**Qué existe hoy en el código** (`spark-match-07-deep-agent/src/tools/matching/handler.py`):
 - Solo se calcula **afinidad RIASEC** (`calculate_affinity_handler`), 1 de los 5 criterios.
 - Opera sobre un **catálogo piloto de 19 carreras** hecho a mano (`data/careers/*.md`: id, nombre, perfil RIASEC, campo), sin universidad, ingreso, costo ni admisión.
 - `features.csv` (6,208 filas, verificado por conteo) **no está conectado a nada río abajo**: ni al agente, ni al backend.

@@ -4,7 +4,7 @@
 "Flujo RAG", ya no dice "por definir" ni "se descartó pgvector". El texto
 actual documenta que **`pgvector` sobre RDS PostgreSQL es la dirección
 planeada** (no descartada), citando que el propio código de
-`search_careers` (en `spark-match-08-deep-agent`) documenta esa intención en
+`search_careers` (en `spark-match-07-deep-agent`) documenta esa intención en
 su docstring. Se explica también qué resuelve hoy (búsqueda por palabra
 clave sobre el catálogo piloto) y qué falta (fecha de migración, aún no
 definida en la bitácora de arquitectura del equipo). Esto es consistente con

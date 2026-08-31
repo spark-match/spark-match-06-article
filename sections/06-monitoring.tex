@@ -21,10 +21,13 @@ El stack de observabilidad se compone de:
         infraestructura del backend serverless y del agente en ECS Fargate.
 \end{itemize}
 
-\paragraph{Seguimiento de experimentos.} El repositorio
-\texttt{spark-match-06-model-training} \textbf{a\'un no tiene c\'odigo} (solo
-archivos de gobernanza como \texttt{CODEOWNERS}). La herramienta planeada para
-esta funci\'on es \textbf{MLflow}: el \texttt{pyproject.toml} de
+\paragraph{Seguimiento de experimentos.} El proyecto no lleg\'o a implementar
+seguimiento de experimentos. El repositorio destinado a alojarlo,
+\texttt{spark-match-06-model-training}, \textbf{nunca tuvo c\'odigo} ---solo
+archivos de gobernanza como \texttt{CODEOWNERS}--- y se elimin\'o al cerrar el
+proyecto, para que la numeraci\'on de repositorios no anunciara una etapa
+inexistente. La herramienta planeada para esta funci\'on era \textbf{MLflow}:
+el \texttt{pyproject.toml} de
 \texttt{spark-match-05-data-pipeline} (rama \texttt{dev}, ver nota sobre la
 rama evaluada en Secci\'on~\ref{sec:model-data}) ya declara un grupo opcional
 \texttt{ml} con MLflow (\texttt{mlflow>=3.13,<4.0}), \textbf{comentado} a la
