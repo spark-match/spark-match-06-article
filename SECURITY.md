@@ -27,7 +27,7 @@ channel.
 Report privately via:
 
 - **GitHub Security Advisories** (preferred):
-  <https://github.com/spark-match/spark-match-07-article/security/advisories/new>.
+  <https://github.com/spark-match/spark-match-06-article/security/advisories/new>.
   Private vulnerability reporting is enabled, so the report stays visible only
   to you and the maintainers until a fix ships.
 - **Email**: <ahincho@unsa.edu.pe>
@@ -58,9 +58,9 @@ This table is a checklist rather than a claim, so that turning any of them off
 makes the document visibly wrong instead of quietly wrong. Verify with:
 
 ```bash
-gh api repos/spark-match/spark-match-07-article \
+gh api repos/spark-match/spark-match-06-article \
   --jq '.security_and_analysis'
-gh api repos/spark-match/spark-match-07-article/private-vulnerability-reporting \
+gh api repos/spark-match/spark-match-06-article/private-vulnerability-reporting \
   --jq '.enabled'
 ```
 

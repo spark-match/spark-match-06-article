@@ -1,4 +1,4 @@
-# Contributing to `spark-match-07-article`
+# Contributing to `spark-match-06-article`
 
 This repository holds the paper for the Trabajo de Fin de Programa: LaTeX
 sources, references, diagram sources and the scripts that compile them.

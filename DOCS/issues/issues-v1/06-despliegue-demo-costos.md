@@ -3,7 +3,7 @@
 **Estado (2026-08-05): 🟡 Arquitectura de despliegue corregida y mucho más precisa; URL/costos reales siguen pendientes.**
 Esta sección tenía dos errores factuales de arquitectura que ya se
 corrigieron con evidencia directa de `modules/agent-service/main.tf` y del
-`Dockerfile` de `spark-match-08-deep-agent`:
+`Dockerfile` de `spark-match-07-deep-agent`:
 1. El agente **no** corre sobre Bedrock AgentCore Runtime — corre en **ECS
    Fargate** (ARM64/Graviton) detrás de un ALB, con CloudFront delante para
    TLS, por una razón documentada explícitamente en el propio Terraform:

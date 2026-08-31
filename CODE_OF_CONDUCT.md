@@ -63,7 +63,7 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at:
 
 - **Email**: <ahincho@unsa.edu.pe> (replies typically within 7 days).
-- **GitHub**: open an issue via <https://github.com/spark-match/spark-match-07-article/issues/new>
+- **GitHub**: open an issue via <https://github.com/spark-match/spark-match-06-article/issues/new>
   with the title prefixed `[CoC]`, mentioning `@spark-match/article-authors` and
   [@ahincho](https://github.com/ahincho); the maintainers will be notified.
 
